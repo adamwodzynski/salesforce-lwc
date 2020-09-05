@@ -2,7 +2,7 @@
 public class AccountTriggerTest {
     @isTest static void CreateContactByNewAccountTest(){
         Account acc = new Account(
-            AccountName          = 'Test',
+            AccountName          = 'Account 123',
             NewClientCheckBox__c = true
         );
 
