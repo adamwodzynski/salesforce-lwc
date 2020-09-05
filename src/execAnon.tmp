@@ -1,0 +1,7 @@
+ public static User getTestUser(){
+        Profile p = [SELECT Id FROM Profile WHERE Name='Standard User'];
+        return new User(Alias='testuser', Email='test@user.com', 
+                        EmailEncodingKey='UTF-8', LastName='test', LanguageLocaleKey='en_US', 
+                        LocaleSidKey='en_US', ProfileId = p.Id, 
+                        TimeZoneSidKey='America/Los_Angeles', UserName=getUserNamePrefix() + 'test@test.com');
+    }
