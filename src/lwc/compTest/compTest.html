@@ -1,0 +1,23 @@
+<template>
+    <div class="slds-align_absolute-center">
+        <lightning-button 
+        variant="brand" 
+        label="Brand" 
+        title="Primary action" 
+        onclick={handleClick} 
+        class="slds-m-left_x-small">
+        </lightning-button>
+    </div>
+<div class="slds-container_small">
+    <p> Number is :{number}</p>
+    <template if:true={visibility}>
+        <lightning-input 
+        type="text" 
+        label="Enter a Text" 
+        name="input1"
+        value={input}
+        onchange={handleInputChange} >
+        </lightning-input>
+    </template>
+</div>
+</template>
